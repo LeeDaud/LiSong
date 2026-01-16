@@ -780,3 +780,513 @@ footer {
     border-color: var(--secondary-color);
     box-shadow: var(--shadow), 0 0 25px rgba(100, 255, 218, 0.2);
 }
+
+/* ========== 新首页样式 ========== */
+.home {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+}
+
+.home-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding: 2rem 0;
+}
+
+.home-header h1 {
+    font-size: 2.5rem;
+    color: var(--text-color);
+    margin: 1rem 0 0.5rem;
+}
+
+.home-tagline {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    font-style: normal;
+}
+
+/* Section 通用样式 */
+.home-section {
+    margin-bottom: 3rem;
+}
+
+.section-label {
+    font-size: 0.85rem;
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.link-arrow {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.2s ease;
+}
+
+.link-arrow:hover {
+    color: var(--secondary-color);
+}
+
+/* Now 摘要 */
+.home-now {
+    background: var(--card-background);
+    padding: 1.5rem 2rem;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.now-text {
+    color: var(--text-color);
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.section-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.85rem;
+}
+
+.meta-date {
+    color: var(--text-secondary);
+}
+
+/* 项目卡片网格 */
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+}
+
+.home-card {
+    display: flex;
+    flex-direction: column;
+    padding: 1.25rem;
+    background: var(--card-background);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-decoration: none;
+    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.home-card:hover {
+    transform: translateY(-3px);
+    border-color: var(--secondary-color);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.home-card .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.home-card h3 {
+    color: var(--text-color);
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.home-card:hover h3 {
+    color: var(--secondary-color);
+}
+
+.card-desc {
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    line-height: 1.5;
+    margin-bottom: 0.75rem;
+    flex-grow: 1;
+}
+
+.card-footer {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.card-tag {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.5rem;
+    background: rgba(100, 255, 218, 0.1);
+    color: var(--secondary-color);
+    border-radius: 4px;
+}
+
+/* 状态点 */
+.status-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.status-dot.status-online {
+    background: #10B981;
+    box-shadow: 0 0 6px rgba(16, 185, 129, 0.5);
+}
+
+.status-dot.status-github {
+    background: transparent;
+    border: 2px solid var(--text-secondary);
+}
+
+.status-dot.status-building {
+    background: #F59E0B;
+    box-shadow: 0 0 6px rgba(245, 158, 11, 0.5);
+}
+
+/* 笔记列表 */
+.home-notes {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.note-item {
+    display: block;
+    padding: 1rem 1.25rem;
+    background: var(--card-background);
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-decoration: none;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.note-item:hover {
+    transform: translateX(4px);
+    border-color: var(--secondary-color);
+}
+
+.note-item h3 {
+    color: var(--text-color);
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin-bottom: 0.25rem;
+}
+
+.note-item:hover h3 {
+    color: var(--secondary-color);
+}
+
+.note-item p {
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+}
+
+.note-date {
+    color: var(--text-secondary);
+    font-size: 0.75rem;
+}
+
+/* 导航卡片 */
+.home-nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.nav-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    background: var(--card-background);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-decoration: none;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.nav-card:hover {
+    transform: translateY(-3px);
+    border-color: var(--secondary-color);
+}
+
+.nav-icon {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.nav-card h3 {
+    color: var(--text-color);
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+.nav-card:hover h3 {
+    color: var(--secondary-color);
+}
+
+.nav-card p {
+    color: var(--text-secondary);
+    font-size: 0.8rem;
+    margin: 0;
+}
+
+/* 联系方式 */
+.home-contact {
+    text-align: center;
+}
+
+.contact-row {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.contact-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.contact-label {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+}
+
+.contact-value {
+    font-size: 1rem;
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+/* 页脚 */
+.site-footer {
+    text-align: center;
+    padding: 2rem;
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+}
+
+.site-footer a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.footer-quote {
+    margin-top: 0.5rem;
+    font-style: italic;
+    opacity: 0.7;
+}
+
+/* 响应式 */
+@media (max-width: 640px) {
+    .home {
+        padding: 1rem;
+    }
+
+    .home-header h1 {
+        font-size: 2rem;
+    }
+
+    .home-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .home-nav {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-row {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .section-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+}
+
+/* ========== 通用页面样式 ========== */
+.page-nav {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem 1.5rem;
+}
+
+.page-nav a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.2s ease;
+}
+
+.page-nav a:hover {
+    color: var(--secondary-color);
+}
+
+.page-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem 1.5rem 3rem;
+}
+
+.page-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.page-header h1 {
+    font-size: 2rem;
+    color: var(--text-color);
+    margin-top: 1rem;
+}
+
+.avatar-small {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+/* ========== About 页面样式 ========== */
+.about-intro {
+    margin-bottom: 2.5rem;
+    line-height: 1.8;
+}
+
+.about-intro p {
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+.about-section {
+    margin-bottom: 2.5rem;
+}
+
+.about-section h2 {
+    font-size: 0.85rem;
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.about-list {
+    list-style: none;
+    padding: 0;
+}
+
+.about-list li {
+    padding: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+    color: var(--text-color);
+}
+
+.about-list li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: var(--secondary-color);
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.about-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    padding: 1rem;
+    background: var(--card-background);
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.about-label {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+}
+
+.about-value {
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+.about-link {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.about-link:hover {
+    text-decoration: underline;
+}
+
+/* QR 码区域 */
+.about-qr {
+    text-align: center;
+}
+
+.qr-grid {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.qr-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.qr-item span {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+.qr-item .qr-code {
+    width: 120px;
+    height: 120px;
+}
+
+/* 链接卡片 */
+.about-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.about-link-card {
+    display: block;
+    padding: 1rem 1.25rem;
+    background: var(--card-background);
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-decoration: none;
+    color: var(--text-color);
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.about-link-card:hover {
+    transform: translateX(4px);
+    border-color: var(--secondary-color);
+    color: var(--secondary-color);
+}
