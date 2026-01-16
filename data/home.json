@@ -1,7 +1,7 @@
 {
   "hero": {
-    "name": "李怂",
-    "tagline": "构建个人系统，践行长期主义",
+    "name": "LeeDaud",
+    "tagline": "达人于道，混混殊俗。",
     "avatar": "images/avatar.jpg"
   },
   "now": {
@@ -18,9 +18,9 @@
       "tags": ["React", "TypeScript"]
     },
     {
-      "name": "日迹",
+      "name": "时间轴日记",
       "description": "简洁的个人日记与时间记录工具",
-      "link": "https://riji.licheng.website",
+      "link": "https://timelinejournal.licheng.website",
       "status": "online",
       "tags": ["日记", "时间管理"]
     },
@@ -64,7 +64,7 @@
     "github": "https://github.com/LeeDaud"
   },
   "footer": {
-    "copyright": "2024-2026 李怂",
+    "copyright": "2024-2026 LeeDaud",
     "quote": "光而不耀，静水流深",
     "githubUrl": "https://github.com/LeeDaud"
   }

@@ -15,6 +15,14 @@
       "link": "https://longevityhabits.licheng.website",
       "technologies": ["React", "TypeScript", "Vite", "Tailwind CSS", "Zustand", "Framer Motion"],
       "status": "在线"
+    },
+    {
+      "id": 3,
+      "name": "Timeline Journal",
+      "description": "简洁的个人日记与时间记录工具",
+      "link": "https://timelinejournal.licheng.website",
+      "technologies": ["Vue.js", "Pinia", "Vue Router", "Tailwind CSS", "TypeScript"],
+      "status": "在线"
     }
   ]
 }
