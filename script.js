@@ -64,12 +64,10 @@ document.addEventListener('DOMContentLoaded', function() {
             const projectsAllLink = document.getElementById('projects-all-link');
             const notesAllLink = document.getElementById('notes-all-link');
             const navGarden = document.getElementById('nav-garden');
-            const navNow = document.getElementById('nav-now');
 
             if (projectsAllLink) projectsAllLink.href = data.navigation.projectsListUrl;
             if (notesAllLink) notesAllLink.href = data.navigation.notesListUrl;
             if (navGarden) navGarden.href = data.navigation.gardenUrl;
-            if (navNow) navNow.href = data.navigation.nowUrl;
         }
 
         // Featured Projects
@@ -137,39 +135,24 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function renderContact(contact) {
-        const container = document.getElementById('contact-row');
+        const container = document.getElementById('footer-contact');
         if (!container) return;
 
-        let html = '';
+        let items = [];
 
         if (contact.wechat) {
-            html += `
-                <div class="contact-item">
-                    <span class="contact-label">微信</span>
-                    <span class="contact-value">${contact.wechat}</span>
-                </div>
-            `;
+            items.push(`<span>微信: ${contact.wechat}</span>`);
         }
 
         if (contact.publicAccount) {
-            html += `
-                <div class="contact-item">
-                    <span class="contact-label">公众号</span>
-                    <span class="contact-value">${contact.publicAccount}</span>
-                </div>
-            `;
+            items.push(`<span>公众号: ${contact.publicAccount}</span>`);
         }
 
         if (contact.github) {
-            html += `
-                <div class="contact-item">
-                    <span class="contact-label">GitHub</span>
-                    <a href="${contact.github}" class="contact-value" target="_blank" rel="noopener noreferrer">GitHub</a>
-                </div>
-            `;
+            items.push(`<a href="${contact.github}" target="_blank" rel="noopener noreferrer">GitHub</a>`);
         }
 
-        container.innerHTML = html;
+        container.innerHTML = items.join('<span style="opacity:0.3">·</span>');
     }
 
     function getStatusClass(status) {

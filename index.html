@@ -45,7 +45,7 @@
 
         <!-- Now/Status: 我在做什么 -->
         <section class="home-section home-now">
-            <h2 class="section-label">现在</h2>
+            <h2 class="section-label"><span class="status-dot status-online"></span>现在</h2>
             <p class="now-text" id="now-summary">加载中...</p>
             <div class="section-meta">
                 <span class="meta-date" id="now-updated"></span>
@@ -78,7 +78,7 @@
         <!-- 导航入口 -->
         <section class="home-section">
             <h2 class="section-label">探索更多</h2>
-            <div class="home-nav">
+            <div class="home-nav home-nav-2col">
                 <a href="#" class="nav-card" id="nav-garden" target="_blank">
                     <div class="nav-icon">📝</div>
                     <h3>数字花园</h3>
@@ -89,24 +89,14 @@
                     <h3>关于我</h3>
                     <p>背景、方向、联系方式</p>
                 </a>
-                <a href="#" class="nav-card" id="nav-now" target="_blank">
-                    <div class="nav-icon">⏰</div>
-                    <h3>Now</h3>
-                    <p>我当前在做什么</p>
-                </a>
-            </div>
-        </section>
-
-        <!-- 联系方式 -->
-        <section class="home-section home-contact">
-            <h2 class="section-label">联系我</h2>
-            <div class="contact-row" id="contact-row">
-                <!-- 由 JS 动态渲染 -->
             </div>
         </section>
     </main>
 
     <footer class="site-footer">
+        <div class="footer-contact" id="footer-contact">
+            <!-- 由 JS 动态渲染 -->
+        </div>
         <p id="footer-copyright"></p>
         <p class="footer-quote" id="footer-quote"></p>
     </footer>
